@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import './pages/home.dart';
 
 void main() {
   runApp(MyApp());
@@ -9,8 +10,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'FlutterShare',
+      theme: ThemeData(
+        primarySwatch: Colors.deepPurple,
+        accentColor: Colors.teal,
+      ),
       debugShowCheckedModeBanner: false,
-      home: Text("Hello World"),
+      home: Home(),
     );
   }
 }
